@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <title>FORM</title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" href="form.css">
+  </head>
+   <body id="main">
+     <h1 id="title">freeCodeCamp Survey Form</h1>
+   
+     <form id="survey-form">
+        <div class="allForm">
+       <p id="description">Let us know how we can improve freeCodeCamp</p>
+    
+       
+         <label id="name-label" for="name">* Name:</label>
+         <input class="champ" id="name" type="text" name="name" placeholder="enter your name"  required />
+         <br>
+       
+         <label  id="email-label" for="email">* Email:</label>
+         <input class="champ" id="email" type="email" name="email" placeholder="enter your email" required />
+         <br>
+       
+         <label id="number-label" for="number">* Age:</label>
+         <input class="champ" id="number" type="number"  name="age" min="1" max="125" placeholder="Age" required />  
+         <br><br>
+    
+      
+       
+  <label for="dropdown">What do you like the most about our site?</label>
+	<select class="champ" name="dropdown" id="dropdown">
+		<option disabled="" selected="" value="">Select an option</option>
+		<option value="">Content</option>
+		<option value="">User Interface</option>
+		<option value="">Interactivity</option>
+	</select>
+         
+       <br><br>
+         
+       <label for="role">Which option best describes your current role?</label>
+       <select class="champ" id="dropdown" name="role">
+         <option value="student" selected>Student</option>
+         <option value="full time job">full time job</option>
+         <option value="full time leaner">full time leaner</option>
+         <option value="prefer not to say">prefer not to say</option>
+         <option value="other">other</option>
+       </select><br><br>
+       
+       <label for="recommand">How likely is that you would recommend freeCodeCamp to a friend?</label><br>
+       <input type="radio" name="recommand" value="definitely" />Definitely<br>
+       <input type="radio" name="recommand" value="maybe" />Maybe<br>       
+       <input type="radio" name="recommand" value="not sure" />Not sure
+         <br><br>
+       
+       <label for="choise1">Things that should be improved in the future (Check all that apply):</label> <br>
+       <input type="checkbox" name="choise1" value="Front-end Projects">Front-end Projects<br>
+       <input type="checkbox" name="choise1" value="Back-end Projects">Back-end Projects<br>
+       <input type="checkbox" name="choise1" value="data Visualization">Data Visualization<br>
+       <input type="checkbox" name="choise1" value="challenges">Challenges<br>
+       <input type="checkbox" name="choise1" value="open Source Community">Open Source Community<br>
+       <input type="checkbox" name="choise1" value="gitter help rooms">Gitter help rooms<br>
+       <input type="checkbox" name="choise1" value="videos">Videos<br>
+       <input type="checkbox" name="choise1" value="city Meetups">City Meetups<br>
+       <input type="checkbox" name="choise1" value="wiki">Wiki<br>
+       <input type="checkbox" name="choise1" value="forum">Forum<br>
+       <input type="checkbox" name="choise1" value="additional Courses">Additional Courses
+         <br><br>
+       
+       <textarea name="message" rows="15" cols="67" placeholder="enter your message...."></textarea><br>
+       <button id="submit" type="submit">Submit</button>
+       
+       </div>
+       
+     </form>
+  </body>
